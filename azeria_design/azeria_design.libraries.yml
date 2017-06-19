@@ -1,0 +1,16 @@
+# Global css & js for all pages
+global:
+  version: 1.x
+  css:
+    base:
+      includes/bootstrap/css/bootstrap.min.css: {}
+      includes/fontawesome/css/font-awesome.min.css: {}
+      includes/css/azeria.css: {}
+    theme:
+      //fonts.googleapis.com/css?family=Open+Sans: { type: external }
+  js:
+    includes/bootstrap/js/bootstrap.min.js: {}
+    includes/js/azeria.js: {}
+    //www.google.com/recaptcha/api.js: { type: external }
+  dependencies:
+  - core/jquery

@@ -1,0 +1,21 @@
+bootstrap_full_width:
+  label: Full Width
+  category: Basic
+  template: templates/ds/bootstrap_full_width
+  css: includes/css/azeria.css
+  regions:
+    page_title:
+      label: Page Title
+    main:
+      label: Main content
+
+bootstrap_one_column:
+  label: One column within the container
+  category: Basic
+  template: templates/ds/bootstrap_one_column
+  css: includes/css/azeria.css
+  regions:
+    page_title:
+      label: Page Title
+    main:
+      label: Main Content

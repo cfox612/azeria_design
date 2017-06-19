@@ -1,0 +1,278 @@
+/* general page related styles */
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+	font-family: $droid-sans;
+}
+
+h1 {
+	font-size: 42px;
+	margin-bottom: 20px;
+	font-family: $droid-serif;
+}
+
+h2 {
+	font-size: 28px;
+	margin-bottom: 20px;
+	font-family: $droid-serif;
+}
+
+h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+	font-family: $droid-serif;
+}
+
+p {
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: .25px;
+}
+
+a {
+	color: $dark-orange;
+	&:hover {
+		text-decoration: none;
+		color: $blue;
+	}
+}
+
+.main-content {
+	padding-top: 20px;
+	&.homepage {
+		padding-top: 0;
+		margin-top: -20px;
+	}
+}
+
+.full-width-row {
+	margin: 0;
+	background: #e2e2e2;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+	clear: both;
+	.col-half {
+		padding: 0;
+		margin: 0;
+		width: 50%;
+		float: left;
+		.pg-half-text {
+			padding-top: 10%;
+		  padding-left: 10%;
+			padding-right: 10%;
+			h3 {
+				font-size: 24px;
+				text-transform: uppercase;
+				margin-bottom: 10px;
+				padding-bottom: 5px;
+				border-bottom: 1px solid #000;
+			}
+			p {
+				line-height: 24px;
+			}
+		}
+	}
+	@media #{$bp-desktop}{
+		.col-half {
+			.pg-half-text {
+				h3 {
+					font-size: 22px;
+				}
+				p {
+					font-size: 16px;
+					line-height: 20px;
+				}
+			}
+		}
+	}
+	@media #{$bp-tablet}{
+		.col-half {
+			width: 60%;
+			&.image-half {
+				width: 40%;
+				overflow: hidden;
+				img {
+					max-width: 150%;
+			    margin-left: -25%;
+				}
+			}
+			.pg-half-text {
+				padding-top: 5%;
+			}
+		}
+	}
+	@media #{$bp-mobile}{
+		.col-half {
+			width: 100%;
+			float: none;
+			margin-bottom: 40px;
+			.pg-half-text {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+			&.image-half {
+				display: none;
+			}
+			.pg-half-text {
+				padding-top: 5%;
+			}
+		}
+	}
+}
+
+.full-width-icons {
+	padding: 10px;
+	.row {
+		border: 10px solid #ededed;
+		width: 100%;
+		overflow: hidden;
+		padding: 0 5%;
+		margin: 0;
+	}
+	h2 {
+		font-size: 32px;
+		text-align: center;
+		margin-top: 80px;
+		margin-bottom: 40px;
+		text-transform: uppercase;
+	}
+	.col-sm-3 {
+		text-align: center;
+		.rect-box {
+			padding: 15px;
+			text-align: center;
+			margin-bottom: 50px;
+			margin-top: 40px;
+			&.rect-orange {
+				background: $light-orange;
+			}
+			.rect-white {
+				background: $white;
+				padding: 15px;
+				border: 2px solid $white;
+			}
+			h3 {
+				margin: 5px 0 20px 0;
+				color: $white;
+				font-weight: 400;
+				letter-spacing: 1px;
+				font-size: 22px;
+				a {
+					color: $white;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+			h4 {
+				margin: 20px 0;
+				color: $light-orange;
+				font-weight: bold;
+				font-size: 18px;
+				letter-spacing: .5px;
+			}
+			p {
+				text-align: left;
+				min-height: 175px;
+			}
+		}
+		@media #{$bp-tablet} {
+			width: 50%;
+		}
+		@media #{$bp-mobile} {
+			width: 100%;
+		}
+	}
+	.fa {
+		font-size: 100px;
+  	margin-bottom: 20px;
+  	margin-top: 40px;
+		color: $light-orange;
+	}
+	.icon-text {
+		font-size: 18px;
+		text-transform: uppercase;
+		margin-bottom: 100px;
+	}
+}
+
+.full-width-image {
+	margin-bottom: -3px;
+}
+
+.full-balloon {
+	background: $bluelight;
+	padding: 100px 0;
+	color: $black;
+	position: relative;
+	overflow: hidden;
+	.balloon {
+		position: relative;
+		z-index: 3;
+		img {
+			max-width: 200px;
+		}
+	}
+	h1 {
+		margin-top: 40px;
+	}
+	p {
+		font-size: 20px;
+		line-height: 24px;
+	}
+	.fa-cloud {
+		font-size: 200px;
+		color: $white;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 0;
+		&.cloud1 {
+			opacity: .5;
+			top: -50px;
+			left: 0;
+		}
+		&.cloud2 {
+			opacity: .45;
+			top: 0px;
+			left: 100px;
+			font-size: 250px;
+			@extend .flip-h;
+		}
+		&.cloud3 {
+			opacity: .65;
+			top: 0;
+			right: -250px;
+		}
+	}
+	@media #{$bp-mobile} {
+		padding: 20px 0;
+		.fa-cloud {
+			margin-top: 50px;
+			&.cloud1 {
+				left: 0px;
+			}
+			&.cloud2 {
+				left: 50px;
+			}
+			&.cloud3 {
+				right: -150px;
+			}
+		}
+		.balloon {
+			margin-top: 20px;
+		}
+	}
+}
+
+.about-content {
+	margin: 40px auto;
+}
+
+
+

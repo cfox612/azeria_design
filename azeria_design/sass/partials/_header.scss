@@ -1,0 +1,62 @@
+/* header related styles */
+
+.header-logo-row {
+	padding: 40px 0;
+	.header-lines {
+		background: $light-orange;
+		height: 20px;
+		margin-top: 65px;
+	}
+	.logo-header {
+		ul {
+			display: inline;
+			li {
+				display: inline-block;
+				&.text {
+					margin-bottom: 50px;
+					font-size: 60px;
+				}
+			}
+		}
+		img {
+			max-width: 150px;
+			margin-bottom: -50px;
+	    margin-left: 20px;
+	    margin-right: 20px;
+		}
+	}
+	@media #{$bp-tablet} {
+		.logo-header {
+			ul {
+				li {
+					&.text {
+						font-size: 48px;
+					}
+				}
+			}
+			img {
+				margin-bottom: -32px;
+				max-width: 125px;
+			}
+		}
+	}
+	@media #{$bp-mobile} {
+		.header-lines {
+			display: none;
+		}
+		.logo-header {
+			ul {
+				li {
+					&.text {
+						font-size: 32px;
+					}
+				}
+			}
+			img {
+				max-width: 100px;
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+		}
+	}
+}

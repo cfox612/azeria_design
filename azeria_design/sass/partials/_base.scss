@@ -1,0 +1,52 @@
+@import "compass";
+
+// Font weights
+$light: 100;
+$regular: 400;
+$bold: 600;
+
+// Base Font
+$base-font-family: 'Open Sans';
+$base-font-weight: $regular;
+$base-font-size: 16px;
+$base-line-height: 1.4;
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif');
+$headline-font: 'Playfair Display', serif;
+$sans-font: 'PT Sans', sans-serif;
+$droid-sans: 'Droid Sans', sans-serif;
+$droid-serif: 'Droid Serif', serif;
+
+
+// Colors
+$light-orange: #d55c27;
+$dark-orange: #b34a26;
+$gray1: #707071;
+$gray2: #939594;
+$black: #000;
+$light-white: #f1f1f1;
+$white: #fff;
+$blue: #38759b;
+$bluelight: #88cff2;
+
+// Media Queries
+$breakpoint-mobile:   767px;
+$breakpoint-tablet:   992px;
+$breakpoint-desktop:  1200px;
+$bp-mobile: "(max-width : 767px)";
+$bp-tablet: "(max-width : 992px)";
+$bp-desktop: "(max-width : 1200px)";
+$bp-gt-mobile: "(min-width : 768px)";
+$bp-gt-tablet: "(min-width : 993px)";
+$bp-gt-desktop: "(min-width : 1201px)";
+
+.flip-h {
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
+}
